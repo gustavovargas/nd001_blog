@@ -2,7 +2,7 @@
 
 .main{
     grid-template-rows: 5rem 600px;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     z-index: -1;
 }
 
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 5vh;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     grid-template-areas:
     "ti"
     "ct";
@@ -25,7 +25,7 @@
     font-weight: 800;
     font-size:2em;
     align-self: center;
-    border:2px solid blue;
+    /* border:2px solid blue; */
 }
 
 .content{
@@ -39,7 +39,7 @@
     align-items: center;
     grid-auto-rows: minmax(min-content, auto);
     grid-template-columns: repeat(3, 1fr);
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .box{
