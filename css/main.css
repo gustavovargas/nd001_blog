@@ -1,0 +1,35 @@
+@import url("footer.css");
+@import url("header.css");
+
+a, a:link, a:visited{
+    color:black;
+}
+
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.main{
+    font-size: 16px;
+    background-image:
+        linear-gradient( rgb(255, 255, 255), 
+                         rgba(240, 240, 240, 0.7) ),
+        url("../imgs/bg_1.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "hd"
+    "des"
+}
+
+.bold_text{
+    font-weight: 700;
+    text-decoration: underline;
+}

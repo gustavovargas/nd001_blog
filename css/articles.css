@@ -1,0 +1,78 @@
+@import url("main.css");
+
+.main{
+    grid-template-rows: 5rem 600px;
+    border: 2px solid greenyellow;
+    z-index: -1;
+}
+
+.desc{
+    grid-area: des;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh;
+    border: 2px solid green;
+    grid-template-areas:
+    "ti"
+    "ct";
+}
+
+.title{
+    grid-area: ti;
+    justify-self: center;
+    width:10%;
+    text-align: center;
+    font-weight: 800;
+    font-size:2em;
+    align-self: center;
+    border:2px solid blue;
+}
+
+.content{
+    grid-area: ct;
+    width:80%;
+    height:auto;
+    /* margin:auto; */
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    grid-auto-rows: minmax(min-content, auto);
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid red;
+}
+
+.box{
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.2);
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:10%;
+
+}
+
+.post_img{
+    height: 60%;
+    filter: grayscale(40%);
+}
+
+.subtitle{
+    font-weight: 500;
+    padding-top: 5px;
+    font-size: 1.1em
+
+}
+
+.date{
+    font-size: .75em;
+    color:rgba(121, 121, 121, 0.9);
+}
+
+@media (min-width: 410px) {
+    .title{
+        width:270px;
+    }
+}

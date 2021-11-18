@@ -1,0 +1,51 @@
+
+.footer{
+    display:grid;
+    color:white;
+    background-color:rgb(19,34,56);
+    padding:1em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    grid-template-columns: 3% 80%;
+    grid-template-rows: 1em 1em 1em;
+    gap:.7em;
+    row-gap: .8em;
+    grid-template-areas: 
+    "contact contact"
+    "globe country"
+    "envelope mail"
+    "footertext footertext";
+}
+
+.bold{
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+.country{
+    grid-area: country;
+}
+
+.mail{
+    grid-area: mail;
+}
+.envelope{
+    grid-area: envelope;
+    justify-self: end;
+}
+.globe{
+    grid-area:globe;
+    justify-self: end;
+}
+
+.footertext{
+    font-weight: 300;
+    padding-top: 1.5em;
+    font-size: .75em;
+    grid-area: footertext;
+    color:rgba(206, 206, 206, 0.753);
+}
