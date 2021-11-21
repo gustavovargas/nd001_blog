@@ -1,77 +1,81 @@
 @import url("main.css");
 
 .main{
-    grid-template-rows: 5rem 600px;
+    grid-template-rows: 5rem 100%;
     /* border: 2px solid greenyellow; */
-    z-index: -1;
 }
 
 .desc{
     grid-area: des;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5vh;
+    grid-template-rows: 5vh 110px;
     /* border: 2px solid green; */
     grid-template-areas:
     "ti"
+    "author"
     "ct";
 }
 
 .title{
     grid-area: ti;
-    width:10%;
-    text-align: center;
+    width:100%;
+    text-align: left;
     font-weight: 800;
     font-size:2em;
     align-self: center;
+    padding-left: 6%;
     /* border:2px solid blue; */
 }
 
-.content{
-    grid-area: ct;
-    width:80%;
-    height:auto;
-    /* margin:auto; */
+.author{
+    grid-area: author;
     display: grid;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-    grid-auto-rows: minmax(min-content, auto);
-    grid-template-columns: repeat(3, 1fr);
-    /* border: 2px solid red; */
+    grid-template-columns: 70px 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "author_img author_text"
+    "author_img author_text";
+    padding-left: 6%;
+    padding-top: 20px;
+    /* border:2px solid red; */
+    column-gap: 30px;
 }
 
-.box{
-    margin: 10px;
-    box-sizing: border-box;
-    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.2);
-    height:90%;
+
+.author_img{
+    height:200%;
+    border-radius: 50%;
+    /* border:2px solid purple; */
+}
+
+.author_text{
+    grid-area: author_text;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left:10%;
-
-}
-
-.post_img{
-    height: 60%;
-    filter: grayscale(40%);
-}
-
-.subtitle{
-    font-weight: 500;
-    padding-top: 5px;
-    font-size: 1.1em
+    justify-content: flex-start;
+    /* border:2px solid purple; */
+    row-gap: 5px;
 
 }
 
 .date{
     font-size: .75em;
     color:rgba(121, 121, 121, 0.9);
+    /* border: 2px solid yellowgreen; */
 }
 
-@media (min-width: 410px) {
-    .title{
-        width:270px;
-    }
+.content{
+    display: flex;
+    /* margin:auto; */
+    flex-direction: column;
+    padding:3%;
+    /* border: 2px solid purple; */
 }
+
+.article_img{
+    max-width: 600px;
+    object-fit: cover;
+}
+
+
