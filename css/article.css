@@ -1,5 +1,9 @@
 @import url("main.css");
 
+.header{
+    grid-template-columns: 3.5rem 4rem 3.5rem;
+}
+
 .main{
     grid-template-rows: 5rem 100%;
     /* border: 2px solid greenyellow; */
@@ -15,6 +19,7 @@
     "ti"
     "author"
     "ct";
+    padding-bottom: 5%;
 }
 
 .title{
@@ -24,7 +29,7 @@
     font-weight: 800;
     font-size:2em;
     align-self: center;
-    padding-left: 6%;
+    padding-left: 8%;
     /* border:2px solid blue; */
 }
 
@@ -36,15 +41,14 @@
     grid-template-areas: 
     "author_img author_text"
     "author_img author_text";
-    padding-left: 6%;
+    padding-left: 8%;
     padding-top: 20px;
     /* border:2px solid red; */
     column-gap: 30px;
 }
 
-
 .author_img{
-    height:200%;
+    height: 180%;
     border-radius: 50%;
     /* border:2px solid purple; */
 }
@@ -56,10 +60,9 @@
     justify-content: flex-start;
     /* border:2px solid purple; */
     row-gap: 5px;
-
 }
 
-.date{
+.author_date{
     font-size: .75em;
     color:rgba(121, 121, 121, 0.9);
     /* border: 2px solid yellowgreen; */
@@ -70,11 +73,13 @@
     /* margin:auto; */
     flex-direction: column;
     padding:3%;
+    gap: 2%;
     /* border: 2px solid purple; */
 }
 
 .article_img{
-    max-width: 600px;
+    height: 30%;
+    max-width: 500px;
     object-fit: cover;
 }
 
