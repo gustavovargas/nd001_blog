@@ -33,3 +33,18 @@ a, a:link, a:visited{
     font-weight: 700;
     text-decoration: underline;
 }
+
+/* style.css */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #1a1a66c5;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+  
+.skip-link:focus {
+top: 0;
+}
