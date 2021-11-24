@@ -6,6 +6,7 @@
 
 .main{
     grid-template-rows: 5rem 100%;
+    /* min-height: 80vh; */
     /* border: 2px solid greenyellow; */
 }
 
@@ -29,7 +30,7 @@
     font-weight: 800;
     font-size:2em;
     align-self: center;
-    padding-left: 8%;
+    padding-left: 40px;
     /* border:2px solid blue; */
 }
 
@@ -41,8 +42,8 @@
     grid-template-areas: 
     "author_img author_text"
     "author_img author_text";
-    padding-left: 8%;
-    padding-top: 20px;
+    padding-left: 40px;
+    padding-top: 30px;
     /* border:2px solid red; */
     column-gap: 30px;
 }
@@ -69,10 +70,11 @@
 }
 
 .content{
+    height: auto;
     display: flex;
-    /* margin:auto; */
     flex-direction: column;
-    padding:3%;
+    padding: 40px;
+    padding-top: 5px;
     gap: 2%;
     /* border: 2px solid purple; */
 }
@@ -81,6 +83,8 @@
     height: 30%;
     max-width: 500px;
     object-fit: cover;
+    /* border: 2px solid red; */
+
 }
 
 

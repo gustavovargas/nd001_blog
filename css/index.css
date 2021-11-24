@@ -1,14 +1,15 @@
 @import url("main.css");
 
 .main{
-    grid-template-rows: 5rem 470px;
+    grid-template-rows: 5rem;
+    height: 480px;
 }
 
 .desc{
     grid-area: des;
     display:grid;
     grid-template-columns: 100%;
-    grid-template-rows: 26vh 11vh 15vh;
+    grid-template-rows: 180px 40px 50px;
     grid-template-areas:
     "main_img"
     "ti"
@@ -17,8 +18,7 @@
 
 .main_img{
     grid-area: main_img;
-    height:100%;
-    width: auto;
+    width: 180px;
     justify-self: center;
     border-radius: 50%;
 }
@@ -26,10 +26,10 @@
 .title{
     grid-area: ti;
     justify-self: center;
-    width:70%;
+    width: 270px;
     text-align: center;
     font-weight: 800;
-    font-size:3.5vh;
+    font-size: 1.5rem;
     padding-top: 2vh;
 }
 
@@ -44,14 +44,9 @@
     padding-top: 2vh;
 }
 
-@media (min-width: 410px) {
-    .title{
-        width:270px;
-    }
-}
-
-@media (min-height: 470px) {
+@media (min-height: 600px) {
     .main{
-        grid-template-rows: 5rem 70vh;
+        height:80vh;
+        overflow:auto;
     }
 }
