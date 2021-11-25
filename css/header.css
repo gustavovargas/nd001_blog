@@ -6,3 +6,10 @@
     column-gap: 10px;
     align-self:center;
 }
+
+@media (max-width: 230px) {
+    .header{
+        grid-template-columns: 3.5rem;
+        grid-template-rows: 50% 50%;
+    }
+}

@@ -6,8 +6,10 @@
 
 .main{
     grid-template-rows: 5rem 100%;
+    /* height: 100%; */
     /* min-height: 80vh; */
     /* border: 2px solid greenyellow; */
+    align-items: start;
 }
 
 .desc{
@@ -20,12 +22,12 @@
     "ti"
     "author"
     "ct";
-    padding-bottom: 5%;
+    min-height: 80vh;
 }
 
 .title{
     grid-area: ti;
-    width:100%;
+    width:80%;
     text-align: left;
     font-weight: 800;
     font-size:2em;
@@ -51,7 +53,7 @@
 .author_img{
     height: 180%;
     border-radius: 50%;
-    /* border:2px solid purple; */
+    /* border:2px solid gray; */
 }
 
 .author_text{
@@ -59,7 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* border:2px solid purple; */
+    /* border:2px solid orange; */
     row-gap: 5px;
 }
 
@@ -70,20 +72,62 @@
 }
 
 .content{
+    grid-area: ct;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    /* padding: 40px; */
     padding-top: 5px;
-    gap: 2%;
+    gap: 10px;
     /* border: 2px solid purple; */
 }
 
 .article_img{
-    height: 30%;
+    height: auto;
     max-width: 500px;
     object-fit: cover;
     /* border: 2px solid red; */
+}
+
+.article_text{
+    /* border:1px solid red; */
+}
+
+@media (max-width: 275px) {
+    .header{
+        grid-template-columns: 2rem;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .desc{
+        grid-template-rows: 10vh 70vw;
+    }
+    .title{
+        padding-left: 5px;
+        width: 100%;
+        font-size:1.5em;
+    }
+    .author{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "author_img"
+        "author_text";
+        padding-left: 5px;
+        padding-top: 5px;
+
+    }
+    .author_img{
+        height: 80%;
+    }
+    .content{
+        padding: 0px;
+        padding-left: 5px;
+        padding-top: 5px;
+        /* border: 2px solid pursple; */
+    }
+    .article_img{
+        height: auto;
+    }
 
 }
 

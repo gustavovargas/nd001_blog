@@ -15,6 +15,7 @@
     "globe country"
     "envelope mail"
     "footertext footertext";
+    /* border: 2px solid red; */
 }
 
 .bold{
@@ -48,4 +49,13 @@
     font-size: .75em;
     grid-area: footertext;
     color:white;
+}
+
+@media (max-width: 230px) {
+    .mail{
+        display: none;
+    }
+    .footertext{
+        display: none;
+    }
 }
