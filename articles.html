@@ -6,25 +6,26 @@
         <title>Personal Blog Website</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='./css/articles.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <a class="skip-link" href="#maincontent">Skip to main</a>
         <main class = "container">
             <div class="main" id="maincontent">
-                <div class="header">
-                    <div>
-                        <a href="index.html">Home</a>
+                <header class="header">
+                    <div class="button">
+                        <a class="link" href="index.html">Home</a>
                     </div>
-                    <div class="bold_text">
-                        <a href="articles.html">Articles</a>
+                    <div class="button bold_text">
+                        <a class="link" href="articles.html">Articles</a>
                     </div>
-                </div>
+                </header>
                 <div class="desc">                    
                     <div class="title">
                         Posts
                     </div>
-                    <div class="content">
+                    <section class="content">
                         <div class="box">
                             <img class="post_img" src="imgs/cat_1.jpg" alt="Cat">
                             <div class="subtitle">
@@ -64,16 +65,21 @@
                             </div>
                             <div class="date">18 Nov 2021</div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
 
-            <div class="footer">
+            <footer class="footer">
                 <div class="contact bold">Contact</div>
                 <div class="country">Madrid, Spain</div>
                 <div class="mail">ge.vargasn@gmail.com</div>
+                <div class="social">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+                </div>
                 <div class="footertext">Copyrigth©2021. All rights reserved</div>
-            </div>
+            </footer>
         </main>
     </body>
 

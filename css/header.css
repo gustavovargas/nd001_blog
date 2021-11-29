@@ -1,10 +1,28 @@
 .header{
     grid-area:hd;
     display: grid;
-    grid-template-columns: 3.5rem 3.5rem;
+    grid-template-columns: 3.7rem 3.7rem;
     padding: 1rem;
     column-gap: 10px;
     align-self:center;
+}
+
+.button{
+    background-color: #d1d1d14a;
+    border: 2px solid rgb(150, 150, 150);
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 1.5px;
+}
+
+.button:hover{
+    background-color: #8989894a;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: none;
 }
 
 @media (max-width: 230px) {
